@@ -130,8 +130,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10;
+    gap: 10px;
     padding: 12px 56px;
+    font-size: 16px;
     font-weight: 700;
     background: var(--secondary);
     color: var(--primary);

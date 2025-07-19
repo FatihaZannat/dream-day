@@ -1,0 +1,33 @@
+.cs_horizental {
+    margin: 32px auto;
+    width: 1px;
+    height: 200px;
+    background-color: rgb(165, 42, 42, .5);
+}
+.cs_about_details_text {
+    display: flex;
+    gap: 20px 40px;
+    padding-top: 80px;
+    margin-bottom: 64px;
+}
+.cs_about_details_img_with_text {
+    .cs_section_title {
+        margin-top: 120px;
+    }
+    .cs_about_right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        >.cs_signature {
+        padding-left: 216px;
+        }
+    }  
+}
+
+ .cs_signature {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 216px;
+    }
