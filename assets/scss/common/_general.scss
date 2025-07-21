@@ -160,6 +160,13 @@
             transform-origin: bottom left;
         }
     }
+    &.cs_brown {
+        background: var(--primary);
+        color: var(--secondary);
+        padding: 12px 40px;
+
+        
+    }
 
 
 //   &.cs_heading_hover {

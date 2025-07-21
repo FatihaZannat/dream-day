@@ -2,7 +2,7 @@
   3. Spacing
 ----------------------------------------------------------------*/
 @media screen and (min-width: 992px) {
-  @for $i from 1 through 150 {
+  @for $i from 1 through 160 {
     .cs_height_#{$i} {
       height: $i + px;
     }

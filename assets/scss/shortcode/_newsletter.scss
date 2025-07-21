@@ -1,0 +1,26 @@
+.cs_newsletter_section {
+    height: 425px;
+}
+form {
+    padding-top: 36px;
+
+    input {
+        border: none;
+        border-bottom: 1px solid var(--primary);
+        background: transparent;
+        padding-bottom: 16px;
+        width: 500px;
+        outline: none;
+    }
+     button {
+            margin-left: 24px;
+        }
+}
+
+.cs_newsletter_flower {
+    position: absolute;
+    margin-top: -55px;
+    left: 50%;
+    bottom: -55px;
+    transform: translate(-50%);
+}
