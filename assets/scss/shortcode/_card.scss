@@ -67,14 +67,61 @@
         transform: translateX(-50%);
         top: -60px;
         z-index: 100;
+        color: red;
     }
 
     p {
         padding-bottom: 56px;
         margin-top: 80px;
+        font-size: 16px;
     }
 }
 
 .cs_gap_xy {
     gap: 65px 0;
+}
+
+// packages card
+
+.cs_package_card.cs_style_1 {
+    padding: 80px 24px 24px;
+    border-radius: 500px 500px 0 0;
+    transition: all 0.3s ease;
+
+    .cs_package_head {
+        p {
+            padding-bottom:  8px;
+            letter-spacing: 8px;
+        }
+    }
+
+    .cs_package_feature {
+        >li {
+            border-bottom: 1px solid #6c4e3f26;
+            padding: 20px 0;
+        }
+    }
+    .cs_package_price {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 24px;
+    }
+
+    &:hover {
+        background-color: var(--primary);
+        color: var(--secondary);
+        .cs_section_title {
+            color: var(--secondary);
+        }
+        .cs_package_feature {
+            >li {
+        border-bottom: 1px solid #faf6f226;
+            }
+        }
+        .cs_btn {
+            background-color: var(--secondary);
+            color: var(--primary);
+        }
+    }
 }
