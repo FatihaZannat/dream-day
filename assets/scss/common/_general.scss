@@ -69,7 +69,7 @@
 }
 
 .cs_white_color {
-  color: var(--white-color);
+  color: var(--white);
 }
 
 .cs_secondary_color {
@@ -124,6 +124,7 @@
 }
 .cs_img_border {
   border: 16px solid var(--white);
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
 /*=============================================  
@@ -550,11 +551,11 @@
 /*=============================================  
   Bootstrap Classess 
 ===============================================*/
-@media (min-width:1400px) {
-  .container {
-    max-width: 1520px;
-  }
-}
+// @media (min-width:1400px) {
+//   .container {
+//     max-width: 1520px;
+//   }
+// }
 
 .cs_gap_y_50 {
   gap: 50px 0;
@@ -585,7 +586,11 @@
     padding-right: 10px;
   }
 }
-
+.cs_section_heading {
+  .cs_section_title {
+    padding-bottom: 16px;
+  }
+}
 /*===========================================================  
   All Common Animations
 =============================================================*/

@@ -1,0 +1,20 @@
+.cs_achievement_left {
+    img {
+        margin-bottom: 24px;
+    }
+    .cs_achievement_details {
+        padding-left: 160px;
+        
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            border-top: 1px solid var(--primary);
+            padding: 16px 0;
+            :last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

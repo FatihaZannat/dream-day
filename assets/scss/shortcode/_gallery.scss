@@ -4,12 +4,18 @@
  
 }
 
-.cs_gallery_heading {
- 
+.cs_section_heading {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // background-color: red;
+
+    &.cs_style_1 {
+        flex-direction: row;
+
+        p {
+            align-self: flex-end;
+        }
+    }
 }
 .cs_gallery_right_bottom {
     width: 100%;

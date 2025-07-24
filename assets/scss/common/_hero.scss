@@ -31,3 +31,17 @@
         margin: 32px 0 140px;
     }
 }
+
+.cs_page_header_content {
+    padding: 164px 0 198px 0;
+}
+.breadcrumb {
+    padding-bottom: 24px;
+    opacity: .75;
+    .breadcrumb-item + .breadcrumb-item {     
+        &::before {
+            content: "|";
+            color: var(--secondary);
+        }
+    }
+}

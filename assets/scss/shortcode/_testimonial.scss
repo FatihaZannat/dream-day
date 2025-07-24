@@ -1,0 +1,25 @@
+.cs_testimonial.cs_style_1 {
+    background-color: rgba(255, 255, 255, 0.80);
+    padding: 40px;
+    margin-top: 180px;
+}
+.cs_testimonal_header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 188px;
+}
+.cs_testimonial_img {
+    width: 100%;
+    height: 688px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.cs_slider_arrow {
+    padding-top: 158px;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    gap: 64px;
+}
