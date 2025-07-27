@@ -34,6 +34,15 @@
      }
 
 }
+.cs_footer_widget {
+   >from {
+        padding-top: 0px !important;
+
+        input {
+            width: inherit;
+        }
+    }
+}
 
 .cs_footer_bottom {
     border-top: 1px solid var(--primary);

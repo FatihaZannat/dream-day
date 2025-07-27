@@ -30,6 +30,24 @@
         flex-direction: column;
         gap: 16px;
     }
+
+    .cs_about_svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+
+        &::after,
+        &::before {
+            content: '';
+            background-color: var(--primary);
+            opacity: .5;
+            width: 471px;
+            height: 1px;
+            
+        }
+    }
+
     // about + number
     .cs_about_number_top {
         .cs_about_number_details {

@@ -132,3 +132,54 @@
         }
     }
 }
+
+.cs_card.cs_style_3 {
+
+    .cs_vendor_icon {
+        padding: 86px 50px 46px;
+        border-radius: 500px 500px 0px 0px;
+        border: 1px solid var(--primary);
+    }
+    .cs_bg {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('../../assets/img/vendors_card.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0;
+            transition: all .3s ease;
+            z-index: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(108, 78, 63, 0.5);
+            opacity: 0;
+            transition: all .3s ease;
+            z-index: 0;
+        }
+        img {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .cs_vendor_details {
+        padding-top: 24px;
+    }
+    
+    &:hover {    
+        .cs_bg::before,
+        .cs_bg::after {
+            opacity: 1;  
+        }
+    }
+}

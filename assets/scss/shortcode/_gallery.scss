@@ -25,3 +25,36 @@
         width: 100%;
     }
 }
+.cs_about_gallery.cs_style_1 {
+    position: relative;
+
+    .cs_about_gallery_btn{
+        transition: all .3s ease;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+
+        .cs_btn {
+            padding: 12px 24px;
+            }
+        }
+        &:hover {
+            .cs_about_gallery_btn{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+}
+.cs_service_details_gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    // align-items: center;
+}
+.cs_service_details_gallery_bottom {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}

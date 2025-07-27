@@ -37,6 +37,7 @@
     mainNav()
     slickInit()
     modalVideo()
+    accordian()
   
   });
   // Run on window resize
