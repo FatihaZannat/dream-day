@@ -1,7 +1,14 @@
+.cs_gallery_left {
+    padding-right: 72px;
+    // background-color: red;
+}
 .cs_gallery_right_top {
     display: flex;
     justify-content: space-between;
- 
+    
+    .cs_section_heading {
+        padding-top: 72px;
+    }
 }
 
 .cs_section_heading {
@@ -39,7 +46,11 @@
         .cs_btn {
             padding: 12px 24px;
             }
+        &.cs_left {
+            left: 32px;
         }
+        }
+       
         &:hover {
             .cs_about_gallery_btn{
                 opacity: 1;

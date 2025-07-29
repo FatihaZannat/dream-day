@@ -2,7 +2,20 @@
         width: 100%;
         height: 100%;
         border-radius: 500px 500px 0px 0px;
-        overflow: visible;
+
+        .cs_card_img {
+            border-radius: inherit;
+            display: block;
+            height: 100%;
+            width: 100%;
+            
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: inherit;
+                transition: all 0.3s ease;
+                }
+            }
 
     &.cs_style_1 {
         .cs_card_title {
@@ -22,14 +35,10 @@
 
             .cs_card_icon {
                 position: absolute;
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.3s ease;
                 left: 50%;
                 transform: translateX(-50%);
                 top: -60px;
                 z-index: 100;
-                color: red;
             }
 
             p {
@@ -43,18 +52,13 @@
                 border: 1px solid var(--primary);
                 border-radius: 500px 500px 0px 0px;
 
-                img {
+                .cs_card_img {
                     opacity: 0;
                     visibility: hidden;
                 }
                 .cs_card_details {
                     opacity: 1;
                     visibility: visible;
-
-                    .cs_card_icon {
-                    opacity: 1;
-                    visibility: visible;
-                    }
                 }
                 .cs_card_title {
                     bottom: 208px;        
@@ -63,24 +67,67 @@
                 }
             }
     }
+
     &.cs_style_2 {
+        .cs_card_img {
+            background-color: var(--body-color);
+        }
         .cs_card_details{
             padding-top: 24px;
         }
     }
 
-}
+    &.cs_style_3{
+        .cs_card_thumbnail{
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            overflow: hidden;
+            opacity: 0;
+            transition: all .3s ease;
+            padding-bottom: 46px;
+            position: relative;
+
+            img {
+                padding-bottom: 46px;
+                width: inherit;
+            }
+            
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: rgba(108, 78, 63, 0.5);
 
 
-
-.cs_cart_img {
-    border-radius: 500px 500px 0 0;
-
-    img {
-        border-radius: inherit;
-        transition: all 0.3s ease;
+            }
     }
+
+    .cs_vendor_icon {
+        width: 100%;
+        height: 100%;
+        border: 1px solid var(--primary);
+        border-radius: inherit;
+        position: relative;
+        z-index: 2;
+    }
+
+    .cs_vendor_details {
+        padding-top: 24px;
+    }
+    
+    &:hover {    
+        .cs_card_thumbnail {
+            opacity: 1;  
+        }
+    }
+    }
+
 }
+
+
+
+
 
 
 
@@ -106,11 +153,20 @@
         >li {
             border-bottom: 1px solid #6c4e3f26;
             padding: 20px 0;
+            
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
         }
     }
     .cs_package_price {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding-top: 40px;
         padding-bottom: 24px;
     }
@@ -123,63 +179,12 @@
         }
         .cs_package_feature {
             >li {
-        border-bottom: 1px solid #faf6f226;
+                border-color: #faf6f226;
             }
         }
         .cs_btn {
             background-color: var(--secondary);
             color: var(--primary);
-        }
-    }
-}
-
-.cs_card.cs_style_3 {
-
-    .cs_vendor_icon {
-        padding: 86px 50px 46px;
-        border-radius: 500px 500px 0px 0px;
-        border: 1px solid var(--primary);
-    }
-    .cs_bg {
-        position: relative;
-        overflow: hidden;
-
-        &::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image: url('../../assets/img/vendors_card.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0;
-            transition: all .3s ease;
-            z-index: 0;
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-color: rgba(108, 78, 63, 0.5);
-            opacity: 0;
-            transition: all .3s ease;
-            z-index: 0;
-        }
-        img {
-            position: relative;
-            z-index: 1;
-        }
-    }
-
-    .cs_vendor_details {
-        padding-top: 24px;
-    }
-    
-    &:hover {    
-        .cs_bg::before,
-        .cs_bg::after {
-            opacity: 1;  
         }
     }
 }

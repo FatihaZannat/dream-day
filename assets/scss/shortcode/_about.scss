@@ -6,7 +6,8 @@
 }
 .cs_about_details_text {
     display: flex;
-    gap: 20px 40px;
+    justify-content: space-between;
+    gap: 40px;
     padding-top: 80px;
     margin-bottom: 64px;
 }

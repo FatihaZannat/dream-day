@@ -1,12 +1,12 @@
 .cs_hero{
     height: 100%;
-
+    position: relative;
     .cs_hero_title {
         padding: 634px 0 12px;
     }
     .cs_hero_content {
         .cs_btn {
-            margin: 32px 0 140px;
+            margin: 32px 0 0px;
     }
 }
 
@@ -46,6 +46,13 @@
     .cs_page_header_content {
         padding: 164px 0 198px 0;
     }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     inset: 0;
+    //     overflow: hidden;
+       
+    // }
 }
 
 &.cs_style_2 {
