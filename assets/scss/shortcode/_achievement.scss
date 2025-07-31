@@ -12,7 +12,7 @@
             gap: 30px;
             border-top: 1px solid var(--primary);
             padding: 16px 0;
-            :last-child {
+            &:last-child {
                 padding-bottom: 0;
             }
         }

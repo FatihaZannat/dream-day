@@ -32,7 +32,21 @@
         width: 100%;
     }
 }
-.cs_about_gallery.cs_style_1 {
+
+.cs_gallery.cs_style_1 {
+    display: flex;
+    gap: 40px;
+    padding-top: 40px;
+    position: relative;
+
+    .cs_gallery_wraper {
+        &:nth-child(2){
+            position: relative;
+            top: -40px;
+    }
+    }
+}
+.cs_gallery_img.cs_style_1 {
     position: relative;
 
     .cs_about_gallery_btn{

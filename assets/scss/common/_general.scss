@@ -110,7 +110,7 @@
 }
 
 .cs_white_bg {
-  background-color: var(--white-color);
+  background-color: var(--white);
 }
 
 .cs_bg_filed {
@@ -578,6 +578,15 @@
   gap: 64px 0;
 }
 
+.cs_row_gap_80 {
+  margin-left: -40px;
+  margin-right: -40px;
+
+  >* {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .cs_row_gap_40 {
   margin-left: -20px;
   margin-right: -20px;

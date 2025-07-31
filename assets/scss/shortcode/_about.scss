@@ -21,7 +21,7 @@
         justify-content: space-between;
         
         >.cs_signature {
-        padding-left: 216px;
+        padding-left: 229px;
         }
     }  
 }
@@ -30,6 +30,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        padding-right: 476px;
     }
 
     .cs_about_svg {
@@ -51,11 +52,12 @@
 
     // about + number
     .cs_about_number_top {
+        .cs_section_title {
+            position: relative;
+            z-index: 10;
+        }
         .cs_about_number_details {
-            padding-right: 440px;
-            :first-child {
-                padding-bottom: 16px;
-            }
+            padding-right: 476px;
         }
     }
     .cs_about_nubmer_top_img {
@@ -65,8 +67,11 @@
     }
     .cs_about_number_bottom {
         display: flex;
-        justify-content: center;
-        gap: 0 80px;
+        justify-content: space-between;
+        
+        .cs_about_number_bottom_img {
+            padding-right: 80px;
+        }
     }
     .cs_counter_section {
         display: flex;

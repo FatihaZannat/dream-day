@@ -71,6 +71,7 @@
     &.cs_style_2 {
         .cs_card_img {
             background-color: var(--body-color);
+            height: auto;
         }
         .cs_card_details{
             padding-top: 24px;
@@ -185,6 +186,45 @@
         .cs_btn {
             background-color: var(--secondary);
             color: var(--primary);
+        }
+    }
+}
+
+.cs_card.cs_style_4 {
+    border-radius: 0;
+
+    .cs_card_details {
+        background: var(--body-color);
+        width: 70%;
+        padding: 56px;
+        display: flex;
+        justify-content: end;
+        margin-top: -257px;
+        margin-left: 27%;
+
+        .cs_card_details_in {
+            max-width: 488px;
+
+            .cs_section_title {
+                padding-bottom: 28px;
+            }
+          .cs_dink {
+            display: flex;
+            align-items: center;
+            gap: 56px;
+            padding-top: 56px;
+            margin-left: -52%;
+              .cs_vertical {
+                width: 200px;
+                height: 1px;
+                background-color: var(--primary);
+                opacity: .5;
+            }
+            .cs_link_btn {
+                display: inline-flex;
+                border-bottom: 1px solid var(--primary);
+            }
+          }
         }
     }
 }
