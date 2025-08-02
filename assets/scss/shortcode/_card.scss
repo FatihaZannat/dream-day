@@ -205,12 +205,6 @@
             display: flex;
             justify-content: end;
         }
-        // .cs_card_thumbnail {
-        //     display: inline-flex;
-        //     justify-content: end;
-        //     overflow: hidden;
-        
-        // }
        .cs_card_details {
             padding-left: 56px;
             margin-left: 0;
@@ -228,6 +222,34 @@
             gap: 484px;
          }
        }
+    }
+    &.cs_type_3 {
+        .cs_card_details {
+            margin-top: -408px;
+            .cs_card_details_in {
+                width: 315px;
+            }
+        }
+    }
+}
+
+.cs_card.cs_style_6 {
+    border-radius:  0;
+
+    .cs_card_details {
+        display: flex;
+        justify-content: flex-end;
+        // margin-left: 25%;
+        margin-left: auto;
+        margin-top: -29%;
+        background-color: var(--body-color);
+        padding: 64px;
+        width: 75%;
+
+        .cs_card_title {
+            align-self: flex-end;
+            margin-top: 64px;
+        }
     }
 }
 
