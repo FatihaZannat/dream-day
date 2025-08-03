@@ -3,6 +3,10 @@
     width: 1px;
     height: 200px;
     background-color: rgb(165, 42, 42, .5);
+
+    @media (max-width: 991px) {
+        height: 100px;
+    }
 }
 .cs_about_details_text {
     display: flex;
@@ -26,7 +30,14 @@
         
         >.cs_signature {
         padding-left: 229px;
+
+        @media (max-width: 991px) {
+            padding: 20px 0;
+            margin-left: auto;
+
         }
+        }
+        
     }  
 }
 
@@ -34,7 +45,6 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding-right: 476px;
     }
 
     .cs_about_svg {
@@ -81,6 +91,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        
+        .cs_signature {
+            padding-right: 476px;
+        }
     }
     .cs_counter.cs_style_1 {
          display: flex;
