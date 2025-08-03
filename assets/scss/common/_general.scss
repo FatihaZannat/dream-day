@@ -24,16 +24,47 @@
 .cs_fs_40 {
   font-size: 40px;
   line-height: 1.2em;
+
+  @media (max-width: 991px) {
+    font-size: 35px;
+  }
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
 }
 
 .cs_fs_48 {
   font-size: 48px;
   line-height: 1.166em;
+
+   @media (max-width: 991px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 32px;
+  }
 }
 
 .cs_fs_64 {
   font-size: 64px;
   line-height: 1.0em;
+
+  @media (max-width: 991px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 40px;
+  }
 }
 
 /*=====================================  
@@ -605,6 +636,15 @@
     padding-right: 10px;
   }
 }
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    >* {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
 // .cs_section_heading {
 //   .cs_section_title {
 //     padding-bottom: 16px;
@@ -620,3 +660,8 @@
   }
 }
 
+@media (max-width: 1201px) {
+        br {
+            display: none;
+        }
+}

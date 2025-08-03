@@ -224,8 +224,19 @@
        }
     }
     &.cs_type_3 {
+        position: relative;
+        margin-top: 253px;
+        margin-bottom: 64px;
+
+        .cs_thumbnail_wraper {
+            position: absolute;
+            left: 39%;
+            top: 56px;
+        }
+
         .cs_card_details {
-            margin-top: -408px;
+            padding-left: 56px;
+            margin-left: 0;
             .cs_card_details_in {
                 width: 315px;
             }

@@ -10,6 +10,10 @@
     gap: 40px;
     padding-top: 80px;
     margin-bottom: 64px;
+
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
 }
 .cs_about_details_img_with_text {
     .cs_section_title {
