@@ -1,4 +1,19 @@
+.cs_achievement_section {
+    position: relative;
+
+    &::after {
+        content:  '';
+        position: absolute;
+        display: block;
+        background-color: var(--body-color);
+        width: 70%;
+        height: 617px;
+        top: 0;
+    }
+}
 .cs_achievement_left {
+    position: relative;
+    z-index: 2;
     img {
         margin-bottom: 24px;
     }
@@ -17,4 +32,8 @@
             }
         }
     }
+}
+.cs_achievement_right {
+    position: relative;
+    z-index: 2;
 }

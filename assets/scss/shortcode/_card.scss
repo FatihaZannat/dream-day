@@ -5,7 +5,7 @@
 
         .cs_card_thumbnail {
             border-radius: inherit;
-            display: block;
+            // display: block;
             
             img {
                 border-radius: inherit;
@@ -76,7 +76,7 @@
     &.cs_style_2 {
     .cs_card_thumbnail {
             background-color: var(--body-color);
-            height: auto;
+            // height: auto;
         }
         .cs_card_details{
             padding-top: 24px;
@@ -87,9 +87,6 @@
         overflow: hidden;
         
         .cs_card_thumbnail{
-            // position: absolute;
-            // top: 0;
-            // left: 0;
             height: 100%;
             width: 100%;
             z-index: 0;
@@ -136,15 +133,6 @@
 }
 
 
-
-
-
-
-
-.cs_gap_xy {
-    gap: 65px 0;
-}
-
 .cs_card.cs_style_4 {
     border-radius: 0;
     
@@ -172,7 +160,7 @@
         padding-left: 25%;
 
         .cs_card_details_in {
-            max-width: 488px;
+            // max-width: 488px;
 
             .cs_card_title {
                 padding-bottom: 28px;
@@ -241,6 +229,69 @@
                 width: 315px;
             }
         }
+    }
+
+    @media (max-width: 1399px) {
+       .cs_card_details {
+            padding-right: 20px;
+            padding-left: 30%;
+       }
+       &.cs_type_2 {
+        .cs_card_details {
+            padding-left: 20px;
+            .cs_card_details_in {
+                .cs_card_title, p {
+                    max-width: 410px;
+                }
+            }
+
+                .cs_btn_section {
+                    gap: 350px;
+                }
+        }
+       }
+    }
+    @media (max-width: 1199px) {
+       .cs_card_details {
+        width: 100%;
+        margin-top: 16px;
+        padding-left: 0;
+        padding: 56px;
+        margin-left: initial;
+    
+            .cs_card_details_in {
+                .cs_btn_section {
+                    margin-left: 0;
+                }
+            }
+       }
+       &.cs_type_2 {
+        .cs_thumbnail_wraper {
+            justify-content: start;
+        }
+        .cs_card_details {
+            padding-left: 56px;
+            .cs_card_details_in {
+                .cs_card_title, p {
+                    max-width: 100%;
+                }
+            .cs_btn_section {
+            gap: 56px;
+        }
+            }
+        }
+       }
+    }
+    @media (max-width: 767px) {
+       .cs_card_details {
+        .cs_card_details_in {
+            .cs_btn_section {
+            .cs_vertical {
+                width: 90px;
+            }
+        }
+        }
+       }
     }
 }
 

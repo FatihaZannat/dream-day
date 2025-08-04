@@ -609,6 +609,10 @@
   gap: 64px 0;
 }
 
+.cs_gap_xy {
+    gap: 65px 0;
+}
+
 .cs_row_gap_80 {
   margin-left: -40px;
   margin-right: -40px;
@@ -660,6 +664,36 @@
   }
 }
 
+.cs_section_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+
+    &.cs_style_1 {
+        flex-direction: row;
+          br{
+            display: block;
+          }
+        }
+        p {
+            align-self: flex-end;
+        }
+
+        @media (max-width: 991px) {
+          &.cs_style_1 {
+            br{
+              display: none;
+            }
+            flex-direction: column;
+          }
+
+          p{
+            align-self: flex-start;
+            max-width: 100%;
+          }
+        }
+    }
 @media (max-width: 1201px) {
         br {
             display: none;

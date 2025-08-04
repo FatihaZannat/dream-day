@@ -69,6 +69,20 @@
     }
 
     // about + number
+    .cs_about_number_section{
+        position: relative;
+
+        &::before {
+            content: '';
+            background-color: var(--body-color);
+            // padding: 80px 0;
+            height: 275px;
+            width: 100%;
+            display: block;
+            position: absolute;
+            bottom: 77px;
+        }
+    }
     .cs_about_number_top {
         .cs_section_title {
             position: relative;
@@ -84,25 +98,59 @@
         right: 0;
     }
     .cs_about_number_bottom {
-        display: flex;
-        justify-content: space-between;
         
         .cs_about_number_bottom_img {
-            padding-right: 80px;
+            display: flex;
+            gap: 80px;
+            position: relative;
+            z-index: 2;
+
+            .cs_signature {
+            padding-right: 424px;
+        }
         }
     }
     .cs_counter_section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        padding: 80px 0;
+        position: relative;
+        z-index: 2;
+        padding-left: 50%;
+        margin-top: -15%;
         
-        .cs_signature {
-            padding-right: 476px;
-        }
     }
     .cs_counter.cs_style_1 {
          display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 22px;
+    }
+
+    @media (max-width: 991px) {
+        .cs_about_number_bottom_img {
+            flex-direction: column-reverse;
+            .cs_signature {
+                padding-top: 16px;
+            }
+        }
+        .cs_about_number_details {
+            padding-right: 0px;
+        }
+        .cs_counter_section {
+            margin-top: 0%;
+            padding-left: 40px;
+        }
+    }
+    @media (max-width: 676px) {
+        .cs_about_number_top {
+            .cs_about_number_details {
+                position: relative;
+                z-index: 2;
+                padding-right: 0;
+        }
+        }
+        .cs_about_nubmer_top_img {
+            img {
+                max-height: 400px;
+            }
+        }
     }
