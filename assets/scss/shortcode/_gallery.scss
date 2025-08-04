@@ -82,11 +82,12 @@
     gap: 40px;
     // align-items: center;
 }
-.cs_service_details_gallery_bottom {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
+// .cs_service_details_gallery_bottom {
+//     display: flex;
+//     gap: 40px;
+//     align-items: center;
+//     flex-wrap: wrap;
+// }
 
 @media (max-width: 991px) {
     .cs_gallery.cs_style_2 {

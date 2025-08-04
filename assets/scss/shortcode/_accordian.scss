@@ -1,8 +1,12 @@
 .cs_accordian_in {
     display: flex;
-    gap: 80px;
+    gap: 40px 80px;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 991px) {
+        flex-direction: column;
+    }
 
     .cs_accordians.cs_style_1{
         max-width: 631px;

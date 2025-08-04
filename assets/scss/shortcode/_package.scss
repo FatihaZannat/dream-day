@@ -1,10 +1,4 @@
-.cs_package_top {
-    .cs_package_img {
-        display: flex;
-    gap: 64px;
-    align-items: flex-end;
-    }
-}
+
 .cs_package_details {
     display: flex;
     justify-content: space-between;
@@ -18,9 +12,8 @@
             margin-top: 28px;
         }
     }
-}
 
-.cs_package_details_icon {
+    .cs_package_details_icon {
     width: 152px;
     height: 152px;
     background-color: var(--body-color);
@@ -44,4 +37,11 @@
         }
     }
 }
+}
+}
+@media (max-width: 991px) {
+    .cs_package_details {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
 }

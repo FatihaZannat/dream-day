@@ -17,6 +17,7 @@
 
     @media (max-width: 767px) {
         flex-wrap: wrap;
+        padding-top: 40px;
     }
 }
 .cs_about_details_img_with_text {
@@ -91,17 +92,19 @@
         .cs_about_number_details {
             padding-right: 476px;
         }
+
+        .cs_about_nubmer_top_img {
+            position: absolute;
+            top: 102px;
+            right: 0;
+        }
     }
-    .cs_about_nubmer_top_img {
-        position: absolute;
-        top: 102px;
-        right: 0;
-    }
+    
     .cs_about_number_bottom {
         
         .cs_about_number_bottom_img {
             display: flex;
-            gap: 80px;
+            gap: 30px 80px;
             position: relative;
             z-index: 2;
 
@@ -125,12 +128,37 @@
         gap: 22px;
     }
 
-    @media (max-width: 991px) {
-        .cs_about_number_bottom_img {
-            flex-direction: column-reverse;
-            .cs_signature {
+    @media (max-width: 1199px) {
+        .cs_about_number_top {
+            .cs_about_number_details {
+                padding-right: 0;
+            }
+
+            .cs_about_nubmer_top_img {
+                position: initial;
                 padding-top: 16px;
             }
+        }
+        .cs_about_number_bottom {
+            .cs_about_number_bottom_img {
+                flex-direction: column;
+                .cs_signature {
+                    padding-top: 16px;
+                    padding-right: 0;
+            }
+        }
+        }
+        .cs_about_number_details {
+            padding-right: 0px;
+        }
+        .cs_counter_section {
+            margin-top: 0%;
+            padding-left: 40px;
+        }
+    }
+    @media (max-width: 991px) {
+        .cs_about_number_bottom_img {
+            
         }
         .cs_about_number_details {
             padding-right: 0px;

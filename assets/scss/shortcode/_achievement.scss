@@ -37,3 +37,11 @@
     position: relative;
     z-index: 2;
 }
+
+@media (max-width: 1199px) {
+    .cs_achievement_left {
+        .cs_achievement_details {
+            padding-left: 100px; 
+        }
+    }
+}
