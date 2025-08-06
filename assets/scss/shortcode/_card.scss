@@ -160,10 +160,12 @@
         padding-left: 25%;
 
         .cs_card_details_in {
-            // max-width: 488px;
-
             .cs_card_title {
                 padding-bottom: 28px;
+
+                &:hover {
+                    opacity: .75;
+                }
             }
           .cs_btn_section {
             display: flex;
@@ -179,10 +181,28 @@
             }
             .cs_link_btn {
                 display: inline-flex;
-                border-bottom: 1px solid var(--primary);
+                position: relative;
 
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: var(--primary);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transform: scale(1, 1);
+                    transition: all .3s ease;
+                    transform-origin: top left;
+                }
+                
                 &:hover {
-                    opacity: .75;
+                    opacity: .5;
+
+                    &::before {
+                        transform: scale(0, 1);
+                        transform-origin: top right;
+                    }
                 }
             }
           }
@@ -314,7 +334,7 @@
     .cs_card_details {
         display: flex;
         justify-content: flex-end;
-        margin-left: auto;
+        margin-left: 23%;
         margin-top: -29%;
         background-color: var(--body-color);
         padding: 64px;
@@ -322,13 +342,18 @@
 
         .cs_card_title {
             align-self: flex-end;
-            margin-top: 64px;
+            margin-top: 56px;
+        }
+        
+        .cs_card_icon {
+            margin-left: 64PX;
         }
     }
     @media (max-width: 1399px) {
         .cs_card_details {
             padding-right: 0;
-            margin-top: -35%;
+            margin-left: 26%;
+            margin-top: -30%;
         }
     }
     @media (max-width: 1199px) {
@@ -337,12 +362,22 @@
             .cs_height_102 {
                 height: 0px;
             }
+            .cs_card_icon {
+                margin-left: 0;
+            }
         }
     }
     @media (max-width: 991px) {
         .cs_card_details {
             padding-right: 0;
-            margin-top: -30%;
+            margin-top: -20%;
+        }
+    }
+    @media (max-width: 676px) {
+        .cs_card_details {
+            .cs_card_icon {
+                margin-left: 0;
+            }
         }
     }
 }

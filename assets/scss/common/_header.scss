@@ -177,6 +177,7 @@
 
                         ul {
                             list-style: none;
+                            display: none;
                             a{
                                 display: block;
                                 padding: 12px 15px;
@@ -293,12 +294,15 @@
         }
 
         &::before {
+            transform:  translate(-50%, -50%) rotate(0deg);
+        }
+        &::after {
             transform:  translate(-50%, -50%) rotate(90deg);
         }
     }
     &.active {
         span {
-            &::before {
+            &::after {
             transform:  translate(-50%, -50%) rotate(0deg);
         }
         }

@@ -668,17 +668,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 30px;
+    
+    p {
+            align-self: flex-start;
+        }
 
     &.cs_style_1 {
         flex-direction: row;
           br{
             display: block;
           }
-        }
-        p {
+          p {
             align-self: flex-end;
         }
+        }
+        
 
         @media (max-width: 991px) {
           &.cs_style_1 {
