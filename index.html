@@ -13,7 +13,7 @@
 
 <body>
     <!-- start header -->
-    <header class="cs_site_header cs_style_1 cs_primary_color cs_sticky_header">
+    <header class="cs_site_header_style_1 cs_primary_color cs_sticky_header">
         <div class="cs_main_header position-relative">
             <div class="container">
                 <div class="cs_main_header_in">
@@ -57,8 +57,11 @@
                                             <a href="about.html">about</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="service.html">service</a>
+                                            <a>services</a>
                                             <ul>
+                                                <li>
+                                                    <a href="service.html">Service</a>
+                                                </li>
                                                 <li>
                                                     <a href="service-details.html">Service Details</a>
                                                 </li>
@@ -66,13 +69,8 @@
                                         </li>
                                     </ul>
                                     <ul class="cs_nav_list cs_mp_0">
-                                        <li class="menu-item-has-children">
-                                            <a>Pages</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="package.html">Package</a>
-                                                </li>
-                                            </ul>
+                                        <li>
+                                            <a href="package.html">Package</a>
                                         </li>
                                         <li>
                                             <a href="contact.html">Contact</a>
@@ -88,32 +86,32 @@
     </header>
     <!-- end header -->
     <!-- start hero -->
-    <section class="cs_hero cs_style_1 cs_bg_filed position-relative" data-src="assets/img/hero_home.png">
-        <div class="cs_bg_filed" data-src="assets/img/hero_home_overlay.png">
-            <div class="container">
-                <div class="cs_hero_content text-center">
-                    <h1 class="cs_hero_title cs_fs_64 cs_secondary_color mb-0">
-                        TURNING YOUR WEDDING DREAMSINTO <br> ULTIMATE REALITY
-                    </h1>
-                    <p class="cs_secondary_color mb-0">Crafting every detail to shape your perfect wedding day.</p>
-                    <a href="index.html" class="cs_btn cs_style_1">
-                        <span>Get Started</span>
-                    </a>
-                    <div class="cs_height_140 cs_height_lg_100"></div>
+    <section class="cs_hero_style_1 cs_bg_filed position-relative" data-src="assets/img/hero_home.png">
+        <div class="cs_overlay cs_bg_filed" data-src="assets/img/hero_home_overlay.png"></div>
+            <div class="container position-relative z-2">
+                <div class="cs_hero_content cs_center_column text-center">
+                    <div class="cs_hero_text">
+                        <h1 class="cs_hero_title cs_fs_64 cs_secondary_color cs_mb_16">
+                            TURNING YOUR WEDDING DREAMS INTO ULTIMATE REALITY
+                        </h1>
+                        <p class="cs_secondary_color cs_mb_32">Crafting every detail to shape your perfect wedding day.</p>
+                        <a href="index.html" class="cs_btn cs_style_1">
+                            <span>Get Started</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div>       
     </section>
     <!-- end hero -->
     <!-- start about -->
-    <section class="cs_about_section cs_style_1">
+    <section class="cs_about_section_style_1">
         <div class="container">
-            <span class="cs_center">
+            <span class="cs_about_svg_style_2 cs_center">
                 <img src="assets/img/flower.svg" alt="flower">
             </span>
             <div class="cs_horizental"></div>
             <div class="cs_about_details">
-                <h2 class="cs_fs_40 text-center mb-0">WE ARE <span class="cs_bold">PASSIONATE</span> ABOUT UNLEASHING ONLY
+                <h2 class="cs_section_title cs_fs_40 text-center mb-0">WE ARE <span class="cs_bold">PASSIONATE</span> ABOUT UNLEASHING ONLY
                     <br> THE BEST WEDDINGS, WITH YEARS OF <span class="cs_bold">EXPERIENCE</span> <br>
                     AND A <span class="cs_bold">PORTFOLIO</span> OF COUNTLESS WORKS.
                 </h2>
@@ -129,12 +127,14 @@
                         day a reflection of your love story.
                     </p>
                 </div>
-                <div class="cs_about_details_img_with_text">
+                <div class="cs_about_details_img">
                     <div class="row cs_row_gap_40">
                         <div class="col-lg-4">
-                            <div class="cs_about_left">
-                                <img class="cs_img_border" src="assets/img/about_1.jpg" alt="about">
-                                <div class="cs_section_heading">
+                            <div class="cs_about_details_img_left">
+                                <div  class="cs_img_border">
+                                    <img src="assets/img/about_1.jpg" alt="about">
+                                </div>                               
+                                <div class="cs_section_heading_style_1">
                                     <h3 class="cs_section_title cs_fs_40 text-uppercase cs_mb_16">Why choose</h3>
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="302" height="36"
@@ -169,21 +169,20 @@
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <div class="cs_about_right h-100">
+                            <div class="cs_about_details_img_right h-100">
                                 <div class="cs_signature">
-                                    <span>with</span>
+                                    <div class="cs_mb_16">With love</div>
                                     <span>
                                         <img src="assets/img/signature.svg" alt="signature">
                                     </span>
                                 </div>
-                                <div>
-                                    <img class="cs_img_border" src="assets/img/about_2.jpg" alt="about">
+                                <div class="cs_img_border">
+                                    <img src="assets/img/about_2.jpg" alt="about">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="cs_height_120 cs_height_lg_110"></div>
@@ -199,7 +198,7 @@
             <div class="cs_height_80 cs_height_lg_60"></div>
             <div class="row cs_row_gap_40 cs_gap_y_64">
                 <div class="col-lg-4 col-md-6">
-                    <div class="cs_card cs_style_1 position-relative">
+                    <div class="cs_card_style_1 position-relative">
                         <a href="service.html" class="cs_card_thumbnail">
                             <img src="assets/img/card_1.png" alt="card img">
                         </a>
@@ -215,7 +214,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="cs_card cs_style_1 position-relative">
+                    <div class="cs_card_style_1 position-relative">
                         <a href="service.html" class="cs_card_thumbnail">
                             <img src="assets/img/card_2.png" alt="card img">
                         </a>
@@ -231,7 +230,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="cs_card cs_style_1 position-relative">
+                    <div class="cs_card_style_1 position-relative">
                         <a href="service.html" class="cs_card_thumbnail">
                             <img src="assets/img/card_3.png" alt="card img">
                         </a>
@@ -247,7 +246,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="cs_card cs_style_1 position-relative">
+                    <div class="cs_card_style_1 position-relative">
                         <a href="service.html" class="cs_card_thumbnail">
                             <img src="assets/img/card_4.png" alt="card img">
                         </a>
@@ -263,7 +262,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="cs_card cs_style_1 position-relative">
+                    <div class="cs_card_style_1 position-relative">
                         <a href="service.html" class="cs_card_thumbnail">
                             <img src="assets/img/card_1.png" alt="card img">
                         </a>
@@ -279,7 +278,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="cs_card cs_style_1 position-relative">
+                    <div class="cs_card_style_1 position-relative">
                         <a href="service.html" class="cs_card_thumbnail">
                             <img src="assets/img/card_5.png" alt="card img">
                         </a>
@@ -303,30 +302,32 @@
     <section class="cs_gallery_section">
         <div class="cs_height_64 cs_height_lg_54"></div>
         <div class="container">
-            <div class="cs_gallery cs_style_2 d-flex">
+            <div class="cs_gallery_style_1 d-flex">
                 <div class="cs_gallery_left">
                     <div class="cs_height_72 cs_height_lg_40"></div>
-                    <img class="cs_img_border" src="assets/img/gallery_img_1.jpg" alt="Wedding Gallery">
+                   <div class="cs_gallery_left_img cs_img_border">
+                        <img src="assets/img/gallery_img_1.jpg" alt="Wedding Gallery">
+                   </div> 
                     <div class="cs_height_46 cs_height_lg_30"></div>
                     <p>Gerald Johnson & Erica Steward <br> <span class="cs_fs_16 cs_bold">(2025)</span></p>
                     <div class="cs_height_114"></div>
                 </div>
                 <div class="cs_gallery_right">
-                        <div class="cs_gallery_right_top">
-                            <div class="cs_section_heading">
-                                <p class="text-uppercase mb-0">Gallery</p>
-                                <h2 class="cs_section_title cs_fs_48 text-uppercase mb-0">Latest <span
-                                        class="cs_bold">Weddings</span></h2>
-                            </div>
-                            <div>
-                                <img class="cs_img_border" src="assets/img/gallery_img_2.jpg" alt="Wedding gallery">
-                            </div>
+                    <div class="cs_gallery_right_top">
+                        <div class="cs_section_heading_style_1">
+                            <p class="text-uppercase mb-0">Gallery</p>
+                            <h2 class="cs_section_title cs_fs_48 text-uppercase mb-0">Latest <span
+                                    class="cs_bold">Weddings</span></h2>
+                        </div>
+                        <div class="cs_gallery_right_top_img cs_img_border">
+                            <img src="assets/img/gallery_img_2.jpg" alt="Wedding gallery">
+                        </div>
 
-                        </div>
-                        <div class="cs_height_72 cs_height_lg_40"></div>
-                        <div class="cs_gallery_right_bottom">
-                            <img class="cs_img_border" src="assets/img/gallery_img_3.jpg" alt="Wedding gallery">
-                        </div>
+                    </div>
+                    <div class="cs_height_72 cs_height_lg_40"></div>
+                    <div class="cs_gallery_right_bottom cs_img_border">
+                        <img src="assets/img/gallery_img_3.jpg" alt="Wedding gallery">
+                    </div>
                 </div>
             </div>
         </div>
@@ -341,8 +342,8 @@
             </h2>
             <div class="cs_height_80 cs_height_lg_60"></div>
             <div class="row cs_row_gap_40 cs_gap_y_64">
-                <div class="col-md-4 ">
-                    <div class="cs_card cs_style_5 cs_secondary_bg">
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="cs_card_style_5 cs_secondary_bg">
                         <div class="cs_card_head">
                             <p class="cs_fs_16 text-center text-uppercase mb-0">Basic</p>
                             <h2 class="cs_section_title cs_fs_48 text-center cs_bold text-uppercase mb-0">Silver</h2>
@@ -361,8 +362,8 @@
                         <a href="#" class="cs_btn cs_style_1 cs_brown w-100">Book Now</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="cs_card cs_style_5 cs_secondary_bg">
+                <div class="col-lg-4 col-md-6">
+                    <div class="cs_card_style_5 cs_secondary_bg">
                         <div class="cs_card_head">
                             <p class="cs_fs_16 text-center text-uppercase mb-0">Best</p>
                             <h2 class="cs_section_title cs_fs_48 text-center cs_bold text-uppercase mb-0">Gold</h2>
@@ -381,8 +382,8 @@
                         <a href="#" class="cs_btn cs_style_1 cs_brown w-100">Book Now</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="cs_card cs_style_5 cs_secondary_bg">
+                <div class="col-lg-4 col-md-6">
+                    <div class="cs_card_style_5 cs_secondary_bg">
                         <div class="cs_card_head">
                             <p class="cs_fs_16 text-center text-uppercase mb-0">Premium</p>
                             <h2 class="cs_section_title cs_fs_48 text-center cs_bold text-uppercase mb-0">Platinum</h2>
@@ -418,7 +419,7 @@
                             data-sm-slides="1" data-md-slides="1" data-lg-slides="1" data-add-slides="1">
                             <div class="cs_slider_wrapper">
                                 <div class="cs_slide">
-                                    <div class="cs_testimonial cs_style_1">
+                                    <div class="cs_testimonial_style_1">
                                         <div class="cs_testimonal_header">
                                             <div class="testimona_avatar">
                                                 <img src="assets/img/testimonial_avatar.svg" alt="">
@@ -438,7 +439,7 @@
                                     </div>
                                 </div>
                                 <div class="cs_slide">
-                                    <div class="cs_testimonial cs_style_1">
+                                    <div class="cs_testimonial_style_1">
                                         <div class="cs_testimonal_header">
                                             <div class="testimona_avatar">
                                                 <img src="assets/img/testimonial_avatar.svg" alt="">
@@ -490,14 +491,14 @@
     </section>
     <!-- end testimonial section -->
     <!-- end newsletter section -->
-    <section class="cs_newsletter_section cs_style_1 cs_bg_filed position-relative" data-src="assets/img/newsletter_bg.svg">
+    <section class="cs_newsletter_style_1 cs_bg_filed position-relative" data-src="assets/img/newsletter_bg.svg">
         <div class="cs_height_90 cs_height_lg_60"></div>
         <div class="container">
             <p class="mb-0 text-center">
                 Stay in the loop with the latest trends, tips, and exclusive offers. Subscribe to our newsletter <br>
                 and be the first to know about upcoming DREAMDAY events and promotions.
             </p>
-            <form action="" class="cs_form cs_style_1 cs_center">
+            <form action="" class="cs_form_style_1 cs_center">
                 <input type="email" placeholder="Enter your email address...">
                 <button class="cs_btn cs_style_1 cs_brown" type="submit">Subscribe</button>
             </form>
@@ -511,7 +512,7 @@
     <!-- start footer section -->
     <section>
         <div class="cs_height_110 cs_height_lg_100"></div>
-        <div class="cs_footer_main cs_style_1">
+        <div class="cs_footer_main">
             <div class="container">
                 <div class="cs_footer_row">
                     <div class="cs_footer_col">

@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- start header -->
-    <header class="cs_site_header cs_style_1 cs_secondary_color cs_sticky_header">
+    <header class="cs_site_header_style_1 cs_secondary_color cs_sticky_header">
         <div class="cs_main_header position-relative">
             <div class="container">
                 <div class="cs_main_header_in">
@@ -55,8 +55,11 @@
                                             <a href="about.html">about</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="service.html">service</a>
+                                            <a>services</a>
                                             <ul>
+                                                <li>
+                                                    <a href="service.html">Service</a>
+                                                </li>
                                                 <li>
                                                     <a href="service-details.html">Service Details</a>
                                                 </li>
@@ -64,13 +67,8 @@
                                         </li>
                                     </ul>
                                     <ul class="cs_nav_list cs_mp_0">
-                                        <li class="menu-item-has-children">
-                                            <a>Pages</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="package.html">Package</a>
-                                                </li>
-                                            </ul>
+                                        <li>
+                                            <a href="package.html">Package</a>
                                         </li>
                                         <li>
                                             <a href="contact.html">Contact</a>
@@ -86,9 +84,9 @@
     </header>
     <!-- end header -->
     <!-- start hero -->
-    <section class="cs_hero cs_style_1 cs_bg_filed position-relative" data-src="assets/img/package_hero.png">
-        <div class="cs_bg_filed" data-src="assets/img/hero_overlay.png">
-            <div class="container">
+    <section class="cs_hero_style_2 cs_bg_filed position-relative" data-src="assets/img/package_hero.png">
+        <div class="cs_overlay cs_bg_filed" data-src="assets/img/hero_overlay.png"></div>
+            <div class="container position-relative z-2">
                 <div class="cs_page_header_content text-center">
                 <ol class="breadcrumb cs_secondary_color cs_center cs_mp_0">
                     <li class="breadcrumb-item">
@@ -100,17 +98,16 @@
                         About Us
                     </h1>
                 </div>
-            </div>
-        </div>
+            </div>    
     </section>
     <!-- end hero -->
      <!-- start silver package -->
       <section>
         <div class="cs_height_120 cs_height_lg_80"></div>
         <div class="container">
-                <div class="cs_card cs_style_6">
-                    <div class="cs_card_thumbnail">
-                        <img class="cs_img_border" src="assets/img/silver.jpg" alt="silver package">
+                <div class="cs_card_style_6">
+                    <div class="cs_card_thumbnail cs_img_border">
+                        <img src="assets/img/silver.jpg" alt="silver package">
                     </div>
                     <div class="cs_card_details">
                         <h2 class="cs_card_title cs_fs_64 text-center text-uppercase mb-0">silver Package</h2>
@@ -157,9 +154,9 @@
       <section>
         <div class="cs_height_120 cs_height_lg_80"></div>
         <div class="container">
-                <div class="cs_card cs_style_6">
-                    <div class="cs_card_thumbnail">
-                        <img class="cs_img_border" src="assets/img/golden_package.jpg" alt="silver package">
+                <div class="cs_card_style_6">
+                    <div class="cs_card_thumbnail cs_img_border">
+                        <img src="assets/img/golden_package.jpg" alt="silver package">
                     </div>
                     <div class="cs_card_details">
                         <h2 class="cs_card_title cs_fs_64 text-center text-uppercase mb-0">Golden Package</h2>
@@ -206,9 +203,9 @@
       <section>
         <div class="cs_height_120 cs_height_lg_80"></div>
         <div class="container">
-                <div class="cs_card cs_style_6">
-                    <div class="cs_card_thumbnail">
-                        <img class="cs_img_border" src="assets/img/platinum_package.jpg" alt="silver package">
+                <div class="cs_card_style_6">
+                    <div class="cs_card_thumbnail cs_img_border">
+                        <img src="assets/img/platinum_package.jpg" alt="silver package">
                     </div>                
                     <div class="cs_card_details">
                         <h2 class="cs_card_title cs_fs_64 text-center text-uppercase mb-0">Platinum Package</h2>
@@ -255,9 +252,9 @@
       <section>
         <div class="cs_height_120 cs_height_lg_80"></div>
         <div class="container">
-                <div class="cs_card cs_style_6">
-                    <div class="cs_card_thumbnail">
-                        <img class="cs_img_border" src="assets/img/custom_package.jpg" alt="silver package">
+                <div class="cs_card_style_6">
+                    <div class="cs_card_thumbnail cs_img_border">
+                        <img src="assets/img/custom_package.jpg" alt="silver package">
                     </div>                
                     <div class="cs_card_details">
                         <h2 class="cs_card_title cs_fs_64 text-center text-uppercase mb-0">Custom Package</h2>
@@ -302,14 +299,14 @@
       </section>
      <!-- end silver package -->
     <!-- end newsletter section -->
-    <section class="cs_newsletter_section cs_style_1 cs_bg_filed position-relative" data-src="assets/img/newsletter_bg.svg">
+    <section class="cs_newsletter_style_1 cs_bg_filed position-relative" data-src="assets/img/newsletter_bg.svg">
         <div class="cs_height_90 cs_height_lg_60"></div>
         <div class="container">
             <p class="mb-0 text-center">
                 Stay in the loop with the latest trends, tips, and exclusive offers. Subscribe to our newsletter <br>
                 and be the first to know about upcoming DREAMDAY events and promotions.
             </p>
-            <form action="" class="cs_form cs_style_1 cs_center">
+            <form action="" class="cs_form_style_1 cs_center">
                 <input type="email" placeholder="Enter your email address...">
                 <button class="cs_btn cs_style_1 cs_type_2 cs_brown" type="submit">Subscribe</button>
             </form>

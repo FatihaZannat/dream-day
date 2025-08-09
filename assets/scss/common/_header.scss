@@ -1,4 +1,4 @@
-.cs_site_header.cs_style_1 {
+.cs_site_header_style_1 {
   position: fixed;
   top: 0;
   left: 0;
@@ -51,6 +51,7 @@
                 align-items: center;
                 justify-content: center;
                 height: inherit;
+                text-transform: uppercase;
                 
                 .menu-item-has-children {
                     >a {
@@ -106,6 +107,10 @@
                             display: block;
                             padding: 10px 20px;
                             color: var(--primary);
+
+                            &:hover {
+                                opacity: .65;
+                            }
                         }
                     }
 

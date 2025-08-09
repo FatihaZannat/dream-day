@@ -154,8 +154,10 @@
   background-attachment: fixed;
 }
 .cs_img_border {
-  border: 16px solid var(--white);
-  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+    img {
+        border: 16px solid var(--white);
+        box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+  }
 }
 
 /*=============================================  
@@ -240,31 +242,7 @@
 //   }
 }
 
-// .cs_text_btn {
-//   position: relative;
 
-//   &::before {
-//     content: "";
-//     width: 100%;
-//     height: 1px;
-//     transform: scale(1, 1);
-//     transform-origin: top left;
-//     background-color: currentColor;
-//     position: absolute;
-//     left: 0;
-//     bottom: 0;
-//     transition: transform 0.4s ease;
-//   }
-
-//   &:hover {
-//     color: var(--accent-color);
-
-//     &::before {
-//       transform: scale(0, 1);
-//       transform-origin: top right;
-//     }
-//   }
-// }
 
 // .cs_player_btn.cs_style_1 {
 //   width: 190px;
@@ -307,39 +285,6 @@
 //   @media (max-width:1199px) {
 //     width: 120px;
 //     height: 120px;
-//   }
-// }
-
-// .cs_social_btns.cs_style_1 {
-//   display: flex;
-//   align-items: center;
-//   gap: 36px;
-
-//   a {
-//     width: 48px;
-//     height: 48px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     border-radius: 50%;
-//     font-size: 28px;
-//     color: var(--heading-color);
-//     background-color: var(--white-color);
-
-//     &:hover {
-//       color: var(--white-color);
-//       background-color: var(--accent-color);
-//     }
-//   }
-
-//   @media (max-width:767px) {
-//     gap: 15px;
-
-//     a {
-//       width: 42px;
-//       height: 42px;
-//       font-size: 20px;
-//     }
 //   }
 // }
 
@@ -664,7 +609,7 @@
   }
 }
 
-.cs_section_heading {
+.cs_section_heading_style_1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -672,24 +617,26 @@
     p {
             align-self: flex-start;
         }
+}
 
-    &.cs_style_1 {
-        flex-direction: row;
-          br{
-            display: block;
-          }
-          p {
+.cs_section_heading_style_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+        p {
             align-self: flex-end;
         }
-        }
-        
+        br{
+            display: block;
+          }
 
         @media (max-width: 991px) {
-          &.cs_style_1 {
             br{
               display: none;
             }
             flex-direction: column;
+            gap: 20px;
           }
 
           p{
@@ -697,7 +644,7 @@
             max-width: 100%;
           }
         }
-    }
+    
 @media (max-width: 1201px) {
         br {
             display: none;

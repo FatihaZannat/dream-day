@@ -1,4 +1,4 @@
-.cs_about_section.cs_style_1 {
+.cs_about_section_style_1 {
     position: relative;
     .container {
         position: relative;
@@ -13,6 +13,62 @@
         position: absolute;
         bottom: 0;
     }
+
+    .cs_about_details_text {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        padding-top: 80px;
+        margin-bottom: 64px;
+}
+    .cs_about_details_img {
+    .cs_section_title {
+        margin-top: 120px;        
+    }
+    
+.cs_about_details_img_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        
+        .cs_signature {
+            padding-left: 229px;
+        }        
+    }  
+    }
+
+    @media (max-width: 1399px) {
+        .cs_about_details_text {
+            br {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+            .cs_about_details_img {
+                .cs_section_title {
+                    margin-top: 80px;
+                }
+
+                .cs_about_details_img_left {
+                    img {
+                        width: 100%;
+                    }
+                }
+                .cs_about_details_img_right {
+                    .cs_signature {
+                        padding: 20px 0;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+     @media (max-width: 767px) {
+        .cs_about_details_text {
+            flex-wrap: wrap;
+            padding-top: 40px;
+        }
+    }
 }
 
 .cs_horizental {
@@ -25,56 +81,6 @@
         height: 100px;
     }
 }
-.cs_about_details_text {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    padding-top: 80px;
-    margin-bottom: 64px;
-
-    @media (max-width: 1399px) {
-        br{
-            display: none;
-        }
-    }
-
-    @media (max-width: 767px) {
-        flex-wrap: wrap;
-        padding-top: 40px;
-    }
-    
-}
-.cs_about_details_img_with_text {
-    .cs_section_title {
-        margin-top: 120px;
-
-        @media (max-width: 991px) {
-            margin-top: 80px;
-        }
-    }
-    .cs_about_right{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
-        >.cs_signature {
-        padding-left: 229px;
-
-        @media (max-width: 991px) {
-            padding: 20px 0;
-            margin-left: auto;
-
-        }
-        }
-        
-    }  
-}
-
- .cs_signature {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
 
     .cs_about_svg {
         display: flex;
@@ -94,7 +100,7 @@
     }
 
     // about + number
-    .cs_about_number_section{
+    .cs_about_section_style_2{
         position: relative;
 
         &::before {
@@ -106,45 +112,47 @@
             position: absolute;
             bottom: 0;
         }
-    }
-    .cs_about_number_top {
+    
+    .cs_about_top {
         .cs_section_title {
             position: relative;
             z-index: 10;
         }
-        .cs_about_number_details {
+        .cs_about_details_text {
             padding-right: 476px;
+
+            p:first-letter {
+                margin-left: 30px;
+            }
         }
 
-        .cs_about_nubmer_top_img {
+        .cs_about_top_img {
             position: absolute;
             top: 102px;
             right: 0;
         }
     }
     
-    .cs_about_number_bottom {
-        
-        .cs_about_number_bottom_img {
-            display: flex;
-            gap: 30px 80px;
+    .cs_about_bottom { 
             position: relative;
-            z-index: 2;
 
-            .cs_signature {
-            padding-right: 424px;
-        }
+        .cs_signature {
+            position: absolute;
+            top: 0;
+            left: 50%;
         }
     }
+
+    }
+
     .cs_counter_section {
         padding: 80px 0;
         position: relative;
         z-index: 2;
         padding-left: 50%;
         margin-top: -15%;
-        
-    }
-    .cs_counter.cs_style_1 {
+       
+        .cs_counter_style_1 {
          display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -155,58 +163,79 @@
             align-items: center;
         }
     }
+    }
+    
 
-    @media (max-width: 1199px) {
-        .cs_about_number_top {
-            .cs_about_number_details {
-                padding-right: 0;
-            }
-
-            .cs_about_nubmer_top_img {
-                position: initial;
-                padding-top: 16px;
-            }
+     @media (max-width: 1399px) {
+        .cs_about_top_img {
+            padding-left: 70%;
         }
-        .cs_about_number_bottom {
-            .cs_about_number_bottom_img {
-                flex-direction: column;
-                .cs_signature {
-                    padding-top: 16px;
-                    padding-right: 0;
-            }
+        .cs_about_bottom {
+        .cs_about_bottom_img {
+                padding-right: 55%;
         }
-        }
-        .cs_about_number_details {
-            padding-right: 0px;
-        }
+     }
+    }
+    @media (max-width: 1199px) { 
         .cs_counter_section {
             margin-top: 0%;
             padding-left: 40px;
         }
     }
     @media (max-width: 991px) {
-        .cs_about_number_bottom_img {
-            
-        }
-        .cs_about_number_details {
-            padding-right: 0px;
+        .cs_about_section_style_2 {
+
+            &::before {
+                display: none;
+            }
+           
+         .cs_about_top{
+             .cs_about_top_img {
+                position: initial;
+                padding-left: 0;
+                padding-top: 20px;
+                img {
+                    width: 100%;
+                }
+            }
+            .cs_about_details_text {
+                padding-right: 0px;
+            }
+        }  
+
+        .cs_about_bottom {
+            .cs_about_bottom_img {
+                padding-right: 0%;
+                img {
+                    width: 100%;
+                }
+            }
+            .cs_signature {
+                position: initial;
+                padding: 20px 0;
+            }
         }
         .cs_counter_section {
             margin-top: 0%;
             padding-left: 40px;
+            padding-top: 40px;
+        }
+        }
+        
+        .cs_about_svg {
+            gap: 40px;
         }
     }
     @media (max-width: 676px) {
-        .cs_about_number_top {
-            .cs_about_number_details {
-                position: relative;
-                z-index: 2;
-                padding-right: 0;
-        }
-        }
-        .cs_about_nubmer_top_img {
-            img {
-                max-height: 400px;
+    .cs_about_section_style_2{
+        .cs_counter_section {
+            padding-left: 0;
+            .cs_counter_style_1 {
+                align-items: center;
             }
         }
     }
+    .cs_about_svg {
+            gap: 20px;
+        }
+}

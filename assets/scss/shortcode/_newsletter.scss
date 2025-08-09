@@ -1,18 +1,11 @@
-.cs_newsletter_section {
+.cs_newsletter_style_1 {
     height: 425px;
-
-    .cs_form.cs_style_1 {
-        padding-top: 36px;
-
-        input {
-            width: 500px;
-        }
-    }
 }
 
-.cs_newsletter_section.cs_style_2{
-   .cs_form.cs_style_1 {
+.cs_newsletter_style_2 {
+    height: 425px;
 
+   .cs_form_style_1 {
     input {
         border-color: var(--secondary);
         &::placeholder {
@@ -30,8 +23,11 @@
     transform: translate(-50%);
 }
 
-.cs_form.cs_style_1{
+.cs_form_style_1{
+    padding-top: 36px;
+
     input {
+        width: 500px;
         border: none;
         border-bottom: 1px solid var(--primary);
         background: transparent;
@@ -49,13 +45,13 @@
 
 
 @media (max-width: 400px) {
-    .cs_form.cs_style_1 {
+    .cs_form_style_1 {
         justify-content: start;
         flex-wrap: wrap;
-        gap: 16px
+        gap: 16px;
 
         button {
-            margin-left: 0;
+            margin-left : 0;
         }
     }
 }

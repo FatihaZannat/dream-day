@@ -4,11 +4,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 991px) {
-        flex-direction: column;
-    }
-
-    .cs_accordians.cs_style_1{
+    .cs_accordians_style_1{
         max-width: 631px;
 
         .cs_accordian {
@@ -17,7 +13,6 @@
             margin-bottom: 28px;
 
             .cs_accordian_head {
-                padding-bottom: 16px;
                 cursor: pointer;
             }
 
@@ -29,6 +24,7 @@
 
             &.active {
                 .cs_accordian_head {
+                    padding-bottom: 16px;
                     pointer-events: none;
                 }
                 .cs_accordian_toggler{
@@ -37,4 +33,14 @@
             }
         }
     }
+
+    @media (max-width: 991px) {
+            flex-direction: column;
+
+            .cs_accordian_img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
 }
