@@ -1,6 +1,7 @@
 
 .cs_card_style_1 {
         border-radius: 500px 500px 0px 0px;
+        transition: all 3s ease;
 
         .cs_card_thumbnail {
             border-radius: inherit;
@@ -18,7 +19,6 @@
             bottom: 24px;
             left: 50%;
             transform: translateX(-50%);
-            transition: all 0.3s ease;
             }
         .cs_card_details {
             opacity: 0;
@@ -29,16 +29,11 @@
             transition: all 0.3s ease;
 
             .cs_card_icon {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: -60px;
-                z-index: 100;
+                
             }
 
             p {
-                padding-bottom: 56px;
-                margin-top: 80px;
+                margin-bottom: 56px;
                 font-size: 16px;
             }
         }
@@ -55,13 +50,25 @@
                     opacity: 1;
                     visibility: visible;
                 }
-                .cs_card_title {
-                    bottom: 208px;        
-                    color: var(--primary);
+               
+            }
 
+            @media (max-width: 1199px) {
+                .cs_card_details {
+                    p {
+                        margin-bottom: 30px;
+                    }
                 }
             }
- 
+            @media (max-width: 767px) {
+                .cs_card_details {
+                    padding: 0 12px 12px;
+                    p {
+                        margin-bottom: 16px;
+                    }
+                    
+                }
+            }
 }
 
 .cs_card_style_3{
@@ -336,8 +343,8 @@
 
     .cs_card_details {
         display: flex;
-        justify-content: flex-end;
-        margin-left: 23%;
+        justify-content: space-between;
+        margin-left: 21%;
         margin-top: -29%;
         background-color: var(--body-color);
         padding: 64px;
@@ -419,6 +426,12 @@
         align-items: center;
         padding-top: 40px;
         padding-bottom: 24px;
+
+        p {
+            &:first-child {
+            opacity: 0.5;
+        }
+        }
     }
 
     &:hover {
