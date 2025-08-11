@@ -179,121 +179,134 @@
     outline: none;
     position: relative;
     text-transform: uppercase;
+    overflow: hidden;
+    z-index: 9;
+    transition: all 1s ease;
+
+    &.cs_light_border {
+        &:hover {
+            border: 1px solid var(--secondary);
+        }
+      }
+
+    &::before, 
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: var(--primary);
+      z-index: -1;
+      border: 1px solid currentColor;
+    }
+    &::after {
+      left: -32px;
+      transform: translate(-50%, -50%);
+    }
+    &::before {
+      right: -32px;
+      transform: translate(50%, -50%);
+    }
+
+    &.cs_brown {
+      background: var(--primary);
+      color: var(--secondary);
+      border: 1px solid var(--primary);
+
+      &::before, 
+      &::after {
+        background-color: var(--secondary);
+
+      }
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    &:hover {
+      color: var(--secondary);
+
+       &::before {
+            animation: criss-cross-right 0.8s both;
+       }
+       &::after {
+        animation: criss-cross-left 0.8s both;
+       }
+    }
+
+}
+
+    .cs_link_btn {
+        display: inline-flex;
+        position: relative;
 
     &::before {
         content: '';
-        position: absolute;
-        left: 0px;
         width: 100%;
-        height: 100%;
-        background-color: var(--ternary);
-        transform: scale(0, 1);
-        transform-origin:top right;
-        transition: transform 01s cubic-bezier(0.075, 0.82, 0.165, 1);
-        
+        height: 1px;
+        background-color: var(--primary);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scale(1, 1);
+        transition: transform .3s ease;
+        transform-origin: top left;
     }
-    &:hover{
-        &::before {
-            transform: scale(1 , 1);
-            transform-origin: bottom left;
+                
+        &:hover {
+            opacity: .75;
+            &::before {
+                transform: scale(0, 1);
+                transform-origin: top right;
+            }
         }
-    }
-    &.cs_type_2 {
-      padding: 12px 40px;
-    }
-    &.cs_brown {
-        background: var(--primary);
-        color: var(--secondary);
-    }
-
-
-//   &.cs_heading_hover {
-//     &::before {
-//       background-color: var(--heading-color);
-//     }
-//   }
-
-//   &.cs_white_hover {
-//     &::before {
-//       background-color: var(--white-color);
-//     }
-//   }
-
-//   >* {
-//     position: relative;
-//     z-index: 1;
-//   }
-
-//   &:hover {
-//     color: var(--white-color);
-
-//     &::before {
-//       transform: scale(1, 1);
-//       transform-origin: bottom left;
-//     }
-
-//     &.cs_white_hover {
-//       color: var(--heading-color);
-//     }
-//   }
-
-//   @media (max-width:991px) {
-//     padding: 17px 40px;
-//   }
-}
+        }
 
 .cs_contact_btn {
   a {
     width: 64px;
     height: 64px;
     border-radius: 50%;
+
+    &:hover {
+        background: var(--ternary);
+    }
   }
 }
 
 
-// .cs_player_btn.cs_style_1 {
-//   width: 190px;
-//   height: 190px;
-//   border: 1px solid var(--white-color);
-
-//   &::before,
-//   &::after {
-//     content: "";
-//     width: calc(100% + 2px);
-//     height: calc(100% + 2px);
-//     border: 1px solid var(--white-color);
-//     border-radius: inherit;
-//     position: absolute;
-//     left: 50%;
-//     top: 50%;
-//     transform: translate(-50%, -50%);
-//     animation: pulse-border 3s linear infinite;
-//   }
-
-//   &::after {
-//     animation-delay: 1.5s;
-//   }
-
-//   .cs_player_btn_icon {
-//     border-left: 40px solid var(--white-color);
-//     border-top: 24px solid transparent;
-//     border-bottom: 24px solid transparent;
-//     transform: translateX(8px);
-//   }
-
-//   &:hover {
-
-//     &::before,
-//     &::after {
-//       animation-play-state: paused;
-//     }
-//   }
-
-//   @media (max-width:1199px) {
-//     width: 120px;
-//     height: 120px;
-//   }
-// }
+@keyframes criss-cross-left {
+  0% {
+    left: -32px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes criss-cross-right {
+  0% {
+    right: -32px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    height: 375px;
+    width: 375px;
+  }
+}
 
 /*=============================================  
   Classess for Border Radius
@@ -652,7 +665,7 @@
           }
         }
     
-@media (max-width: 1201px) {
+@media (max-width: 1399px) {
         br {
             display: none;
         }
