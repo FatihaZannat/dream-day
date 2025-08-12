@@ -7,6 +7,7 @@
 
    .cs_form_style_1 {
     input {
+        color: var(--secondary);
         border-color: var(--secondary);
         &::placeholder {
             color: var(--secondary);
