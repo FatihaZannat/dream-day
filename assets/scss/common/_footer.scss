@@ -7,11 +7,14 @@
 }
 
 .cs_footer_alfabet {
-    margin-top: 32px;
-    display: flex;
-    gap: 56px;
-    font-size: 16px;
-    font-weight: 700;
+    ul {
+        margin-top: 32px;
+        list-style: none;
+        display: flex;
+        gap: 56px;
+        font-size: 16px;
+        font-weight: 700;
+    }
     
     @media (max-width: 1200px) {
         margin-top: 16px;
@@ -57,4 +60,24 @@
     padding-top: 16px;
     font-size: 16px;
     gap: 16px;
+
+    .cs_footer_widget_menu_bottom {
+        display: flex;
+        align-items: center; 
+        gap: 15px;
+    }
+}
+
+.cs_footer_widget_menu a,
+.cs_footer_widget_menu_bottom a {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, currentColor 0, currentColor 100%);
+  transition: background-size 0.42s cubic-bezier(0.49, 0.49, 0.08, 1),color 0.27s ease-out;
+  background-position: 100% calc(100% - 0px);
+  background-size: 0 1px;
+
+  &:hover {
+    background-size: 100% 1px;
+    background-position: 0 calc(100% - 0px);
+  }
 }
