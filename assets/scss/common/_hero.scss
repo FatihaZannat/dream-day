@@ -67,9 +67,10 @@
 @media (max-width: 991px) {
     .cs_hero_style_1 ,
     .cs_hero_style_2 {
+        
         &::before {
-        display: none;
-    }
+            display: none;
+        }
     }
     
 }

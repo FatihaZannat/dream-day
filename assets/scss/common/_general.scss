@@ -554,13 +554,6 @@
 //   }
 // }
 
-.cs_gap_y_50 {
-  gap: 50px 0;
-}
-
-.cs_gap_y_45 {
-  gap: 45px 0;
-}
 
 .cs_gap_y_40 {
   gap: 40px 0;
@@ -572,6 +565,10 @@
 
 .cs_gap_y_64 {
   gap: 64px 0;
+
+  @media (max-width: 991px) {
+    gap: 40px 0;
+  }
 }
 
 .cs_gap_xy {

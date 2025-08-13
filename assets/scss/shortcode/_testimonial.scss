@@ -31,19 +31,15 @@
 
 @media (max-width: 991px) {
     .cs_testimonial_style_1{
-        margin-top: 40px;
+        margin-top: 0px;
     }
     .cs_testimonal_header {
-        padding-bottom: 50px;
-    }
-    
-    .cs_testimonial_body {
-        max-width: 500px;
+        padding-bottom: 40px;
     }
 
     .cs_testimonial_img {
         flex-direction: column-reverse;
-        gap: 30px;
+        gap: 40px;
         background-color: rgba(255, 255, 255, 0.80);
         
         .cs_slider_arrow {

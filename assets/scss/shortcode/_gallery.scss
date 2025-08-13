@@ -121,8 +121,13 @@
 @media (max-width: 767px) {
     .cs_gallery_style_2 {
         flex-direction: column;
+        padding-top: 0;
 
         .cs_gallery_wraper {
+            &:nth-child(2){
+                position: relative;
+                top: 0;
+            }
             img {
                 width: 100%;
             }

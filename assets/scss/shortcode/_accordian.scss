@@ -12,6 +12,10 @@
             padding-bottom: 28px;
             margin-bottom: 28px;
 
+            &:last-child {
+                margin-bottom: 0;
+            }
+
             &.active {
                 padding-bottom: 24px;
             }

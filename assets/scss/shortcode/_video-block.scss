@@ -1,7 +1,9 @@
 
 .cs_video_block.cs_style_1 {
     min-height: 620px;
-    position: relative;
+    position: relative; 
+    border: 16px solid var(--white);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
 }
 .cs_video_block_in {
     position: absolute;
